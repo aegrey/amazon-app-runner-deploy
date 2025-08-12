@@ -83,15 +83,6 @@ function getCodeSourceConfiguration(port: number, config: ICodeConfiguration, ru
             SourceDirectory: 'apps/api',
             CodeConfiguration: {
                 ConfigurationSource: 'REPOSITORY',
-                CodeConfigurationValues: {
-                    Runtime: config.runtime,
-                    BuildCommand: config.buildCommand,
-                    StartCommand: config.startCommand,
-                    Port: `${port}`,
-                    RuntimeEnvironmentVariables: runtimeEnvironmentVariables,
-                    RuntimeEnvironmentSecrets: runtimeEnvironmentSecrets,
-                    SourceDirectory: 'apps/api'
-                },
             },
         },
     };
