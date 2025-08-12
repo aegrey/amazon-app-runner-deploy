@@ -80,6 +80,7 @@ function getCodeSourceConfiguration(port: number, config: ICodeConfiguration, ru
                 Type: 'BRANCH',
                 Value: config.branch,
             },
+            SourceDirectory: 'apps/api',
             CodeConfiguration: {
                 ConfigurationSource: 'API',
                 CodeConfigurationValues: {
@@ -89,6 +90,7 @@ function getCodeSourceConfiguration(port: number, config: ICodeConfiguration, ru
                     Port: `${port}`,
                     RuntimeEnvironmentVariables: runtimeEnvironmentVariables,
                     RuntimeEnvironmentSecrets: runtimeEnvironmentSecrets,
+                    SourceDirectory: 'apps/api'
                 },
             },
         },
