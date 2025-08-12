@@ -82,7 +82,7 @@ function getCodeSourceConfiguration(port: number, config: ICodeConfiguration, ru
             },
             SourceDirectory: 'apps/api',
             CodeConfiguration: {
-                ConfigurationSource: 'API',
+                ConfigurationSource: 'REPOSITORY',
                 CodeConfigurationValues: {
                     Runtime: config.runtime,
                     BuildCommand: config.buildCommand,

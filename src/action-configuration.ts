@@ -194,7 +194,7 @@ function getRuntime(): Runtime {
         throw new Error(`Specified runtime (${rawRuntime}) does not belong to the supported range: ${JSON.stringify(Object.keys(Runtime))}`);
     }
 
-    return Runtime[<keyof typeof Runtime>runtime];
+    return [<keyof typeof Runtime>runtime];
 }
 
 function getEnvironmentVariables(envVarNames: string[]): Record<string, string> | undefined {
