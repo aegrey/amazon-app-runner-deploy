@@ -2,6 +2,8 @@
 
 Registers an AWS App Runner Service and deploys the application using the source code of a given GitHub repository. Supports both source code and Docker image based service.
 
+**This fork modification allows specifying settings from the root repository via YAML to have much greater customization and control over deployments.**
+
 ## Table of Contents
 
 <!-- toc -->
